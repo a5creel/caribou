@@ -46,53 +46,6 @@ legend("bottomleft", legend = c("Business as Usual", "No Restoration", "Full Res
        col = c("black", "black", "dark grey"), 
        lty = c(1,3,5), lwd = c(2,3,2), cex = 1.2)
 
-
-
-
-####Plotting of time simulation
-####Plotting of time simulation
-#plot(sim.out$xs ~ sim.out$time,
-#     lwd=2, col="white",
-##     xlim = c(0,200),
-#     ylim = c(0.0, 12000.0),
-#     xlab="Year",
-#     ylab="Wolf and Caribou Population",
-#     main = "Population Dynamics in Alberta: BAU",
-#     cex.axis = .8,
-#     cex.lab = 1.1,
-#     cex.main = 1.2)
-#lines(sim.out$xs~ sim.out$time, lwd=2, col="blue")
-#lines(sim.out$zs ~ sim.out$time,lwd=2, col="purple")
-#legend("topright", legend = c("Caribou", "Ungulates", "Wolves"), 
-#       col = c("blue", "red", "purple"), 
-#       lty = c(1,1,1), lwd = c(2,2,2), cex = 1)
-#par(new = T)
-#plot(sim.out$ys ~ sim.out$time, pch=16, axes=F, 
-#    xlab=NA, ylab=NA, cex=1.2, col = 'white', xlim = c(0, 200.0),
-#     ylim = c(0.0, 1500000.0))
-#axis(side = 4)
-#lines(sim.out$ys ~ sim.out$time, lwd=2, col="red") 
-#lines(sim.out$ls ~ sim.out$timeline, lwd = 2, col = "brown")
-#mtext(side = 4, line = 2, 'Ungulate Population')
-
-#plot(sim.out$ls ~ sim.out$time, col="white", 
-#     xlim = c(0.0,200),
-#    ylim = c(0.0,300000),
-#     cex.main = 1.2,
-#     main = "Legacy Linear Features Dyanmics: BAU",
-#     xlab="Year",
-#     ylab="Linear Features (km)")
-#lines(sim.out$ls ~ sim.out$time, lwd = 2, lty = 1, col = "gray")
-#lines(sim.out$ls ~ sim.out$time, lwd = 2, lty = 5, col = "dark gray")
-#lines(sim.out$ls ~ sim.out$time, lwd = 2, lty = 3, col = "black")
-#legend("bottomright", legend = c("No Restoration", "BAU", "Best-case Scenario"), 
-#       col = c("gray", "dark gray", "black"), 
-#       lty = c(1,1,1), lwd = c(2,2,2), cex = 1)
-
-
-
-
-
 cariboux <- seq(from = 101, to = 6100, by = 1)
 ungulatesx <- rep(endP, 6000)
 wolvesx <- rep(endW, 6000)
@@ -100,7 +53,7 @@ lfeaturesx <- rep(endL, 6000)
 xyzlx <- cbind(cariboux, ungulatesx, wolvesx, lfeaturesx)
 xyzlx <- as.data.frame(xyzlx, row.names = c('xs', 'ys', 'zs', 'ls'))
 #View(xyzl)
-##HOW DO I CHANGE THE DANG COLUMN TITLESS
+
 
 ## Simulation data
 csimx <- vsim(Caproxc,xyzlx)
