@@ -1,3 +1,5 @@
+#Looks like this is just an earlier version of 7_10 plotting price curves
+
 ####Code for simulating price curves for each stock on same graph
 zero <- rep (0,1500000)
 
@@ -204,7 +206,7 @@ plot(caribou_spc1$shadowC1 ~ caribou_spc1$caribouc1,
      xlim = c(0.0, 10000.0),
      ylim = c(0,250000)
 )
-#lines(zero, col = "red")
+
 lines(caribou_spc1$shadowC1 ~ caribou_spc1$caribouc1, lwd =2, lty = 6, col = "light grey")
 lines(caribou_spc2$shadowC2 ~ caribou_spc2$caribouc2, lwd =2, lty = 1, col = "dark grey")
 lines(caribou_spc3$shadowC3 ~ caribou_spc3$caribouc3, lwd =2, lty = 1, col = "black")
@@ -225,7 +227,7 @@ plot(wolf_spw2$shadowwolfw2 ~ wolf_spw2$wolvesw2,
      xlim = c(0.0, 9000.0),
      ylim = c(-700000,0)
 )
-#lines(zero, col = "red")
+
 lines(wolf_spw1$shadowwolfw1 ~ wolf_spw1$wolvesw1, lwd =2,lty = 6, col = "light grey")
 lines(wolf_spw2$shadowwolfw2 ~ wolf_spw2$wolvesw2, lwd =2,lty = 1, col = "dark grey")
 lines(wolf_spw3$shadowwolfw3 ~ wolf_spw3$wolvesw3, lwd =2,lty = 1, col = "black")
@@ -246,7 +248,7 @@ plot(prey_spu1$shadowpreyu1 ~ prey_spu1$ungulatesu1,
      xlim = c(0, 1500000.0),
      ylim = c(-500,500.0)
 )
-#lines(zero, col = "red")
+
 lines(prey_spu1$shadowpreyu1 ~ prey_spu1$ungulatesu1, lwd =2,lty = 6, col = "light grey")
 lines(prey_spu2$shadowpreyu2 ~ prey_spu2$ungulatesu2, lwd =2,lty = 1, col = "dark grey")
 lines(prey_spu3$shadowpreyu3 ~ prey_spu3$ungulatesu3, lwd =2,lty = 1, col = "black")
@@ -267,7 +269,7 @@ plot(LF_spf1$shadowLFf1 ~ LF_spf1$lfeaturesf1,
      xlim = c(100000.0, 300000.0),
      ylim = c(0,50000)
 )
-#lines(zero, col = "red")
+
 lines(LF_spf1$shadowLFf1 ~ LF_spf1$lfeaturesf1, lwd =2,lty = 6, col = "light grey")
 lines(LF_spf2$shadowLFf2 ~ LF_spf2$lfeaturesf2, lwd =2,lty = 1, col = "dark grey")
 lines(LF_spf3$shadowLFf3 ~ LF_spf3$lfeaturesf3, lwd =2,lty = 1, col = "black")
@@ -275,18 +277,7 @@ legend("topright", legend = c("0% Restoration", "25% Restoration", "50% Restorat
        col = c("grey", "dark grey", "black"), 
        lty = c(6,1,1), lwd = c(2,2,2), cex = 1)
 
-#write.csv(LF_spf1, file = "LF_spf1.csv")
-#write.csv(LF_spf2, file = "LF_spf2.csv")
-#write.csv(LF_spf3, file = "LF_spf3.csv")
-#write.csv(caribou_spc1, file = "caribou_spc1.csv")
-#write.csv(caribou_spc2, file = "caribou_spc2.csv")
-#write.csv(caribou_spc3, file = "caribou_spc3.csv")
-#write.csv(wolf_spw1, file = "wolf_spw1.csv")
-#write.csv(wolf_spw2, file = "wolf_spw2.csv")
-#write.csv(wolf_spw3, file = "wolf_spw3.csv")
-#write.csv(prey_spu1, file = "prey_spu1.csv")
-#write.csv(prey_spu2, file = "prey_spu2.csv")
-#write.csv(prey_spu3, file = "prey_spu3.csv")
+
 
 
 
