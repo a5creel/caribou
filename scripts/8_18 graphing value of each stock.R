@@ -94,7 +94,7 @@ plot(deltavalue2$wildlife ~ deltavalue2$year,
      yaxt = "n"
 )
 axis(side = 2, at=c(0, -100000,-50000, 0, 50000, 10000), 
-     labels=c("-100,000", "-50,000", "0", "50,000", "100,000"))
+     labels=c("0","-100,000", "-50,000", "0", "50,000", "100,000"))
 lines(deltavalue$ungulates ~ deltavalue$year, col = "grey", lty = 5, lwd =2)
 lines(deltavalue2$ungulates ~ deltavalue2$year, col = "black", lty = 1,lwd =2)
 lines(deltavalue3$ungulates ~ deltavalue3$year, col = "dark grey", lty = 3, lwd =2)
