@@ -1,3 +1,5 @@
+#Lines are overlapping and key is on top of everything
+
 ##MARGINAL VALUE OF CARIBOU (HARPER) PLOTTED AGAINST CAPN SHADOW PRICE
 cariboux <-seq(from=1, to=10000, by = 10)
 con_deriv <- matrix(0,nrow = length(cariboux), ncol = 2,  

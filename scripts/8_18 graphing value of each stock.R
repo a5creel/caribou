@@ -1,3 +1,8 @@
+#Errors in this code!
+#Lines are either overlapping or not plotting. Throwing erors. 
+#deltavalueTOT2 doesn't exist yet: The reason for this is that 8_19 must be ran first
+#Then throws error that variable lengths are differing
+
 #########################################################
 #TOTAL VALUE CHANGE
 #TOTAL WILDLIFE
@@ -112,7 +117,7 @@ plot(deltavalue2$wildlife ~ deltavalue2$year,
      cex.lab = 1.1,
      cex = .05,
      col = "white",
-     xlim = c(2010, 2110),
+     xlim = c(2010, 2110), 
      ylim = c(-15000000, 0),
      yaxt = "n"
 )

@@ -1,4 +1,4 @@
-#Looks like this is just an earlier version of 7_10 plotting price curves
+#All the lines in each plot lay on top of one another. 
 
 ####Code for simulating price curves for each stock on same graph
 zero <- rep (0,1500000)

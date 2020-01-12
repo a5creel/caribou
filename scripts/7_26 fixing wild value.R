@@ -1,3 +1,5 @@
+#Chang in value stored in wildlife stock through time needs to have the y-axis fixed and lines added to the key
+
 timew <- seq(from = 2010, to = 2110, by = 1)
 
 #SCENARIO 1 (No restoration)

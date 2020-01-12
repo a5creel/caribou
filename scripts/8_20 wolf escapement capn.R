@@ -1,3 +1,5 @@
+#Prints population levels and amound of linear features
+
 ######################################################################################
 # {capn} Woodland Caribou
 # Dat 4/26/2018

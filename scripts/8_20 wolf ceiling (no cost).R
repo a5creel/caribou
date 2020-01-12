@@ -1,3 +1,5 @@
+#Does not print plots
+
 ##########DATA/DYNAMICS
 
 #####Parameter values used ecological model

@@ -1,3 +1,6 @@
+#Thows error: 'sim.outw' not found
+
+
 timew <- seq(from = 1, to = 100, by = 1)
 zero<-rep(0, 101)
 

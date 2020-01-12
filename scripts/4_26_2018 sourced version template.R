@@ -1,4 +1,4 @@
-#Can remove this file because it is just s template for 1.source_model.R
+#Can remove this file because it is just a template for 1.source_model.R
 ######################################################################################
 # {capn} Woodland Caribou
 # Dat 4/26/2018

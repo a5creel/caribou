@@ -1,3 +1,5 @@
+#All the lines are overlappings
+
 ####PLOTS
 #CARIBOU
 par(mfcol = c(1,1), bty = "o", xaxs = "i", yaxs = "i")

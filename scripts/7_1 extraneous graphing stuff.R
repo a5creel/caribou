@@ -1,3 +1,10 @@
+#BAU graphs, but not the ones that were published 
+#Conservation Value (w/o capn) doesn't have anything graphed on it
+#System Value Function (BAu) has lines flat on the bottom
+#Shadow price of carbou: BAU    looks right
+#Kilo of linear features has all overlapping lines
+#Colorful graph has lines going through the key
+
 #Dynamics 1980 to 2080
 par(mfcol = c(1,1), bty = "o", xaxs = "i", yaxs = "i")
 plot(sim.out$xs ~ sim.out$timeline,
